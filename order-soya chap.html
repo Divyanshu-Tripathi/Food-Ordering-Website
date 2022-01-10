@@ -84,7 +84,7 @@
                     <div class="order-label">Address</div>
                     <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
 
-                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                    <button id='btn-next' name ='next' type='button' class='btn btn-block btn-primary' onclick="confirmOrder()">Confirm Order</button>
                 </fieldset>
 
             </form>
@@ -118,10 +118,16 @@
     <!-- footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>All rights reserved. Designed By <a href="#">Ashutosh Tomar,Divyanshu Tripathi, Ishika Goyal</a></p>
+            <p>All trademarks are properties of their respective owners. 2008-2021 © Pinch of Spice™ Ltd.<br>All rights reserved.<br> Designed By <a href="#">Ashutosh Tomar, Divyanshu Tripathi, Ishika Goyal</a></p>
         </div>
     </section>
     <!-- footer Section Ends Here -->
 
+
 </body>
+<script>
+    function confirmOrder() {
+  alert("Your's Order is Confirmed");
+}
+</script>
 </html>
