@@ -45,42 +45,53 @@
     </section>
     <!-- Navbar Section Ends Here -->
 
-
-
-    <!-- CAtegories Section Starts Here -->
-    <section class="categories">
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search">
         <div class="container">
-            <h2 class="text-center">Explore Foods</h2>
+            
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
 
-            <a href="category-starters.html">
-                <div class="box-3 float-container">
-                    <img src="images/starters logo.jpg" alt="Starters" class="img-responsive img-curve">
-    
-                    <h3 class="float-text text-white">Starters</h3>
-                </div>
-                </a>
-    
-                <a href="category-best seller meals.html">
-                <div class="box-3 float-container">
-                    <img src="images/Best seller meals.jpg" alt="Best seller meals" class="img-responsive img-curve">
-    
-                    <h3 class="float-text text-white">Best seller meals</h3>
-                </div>
-                </a>
-    
-                <a href="category-drinks.html">
-                <div class="box-3 float-container">
-                    <img src="images/drinks.jpg" alt="Drinks" class="img-responsive img-curve">
-                    <h3 class="float-text text-white">Drinks and Beverages</h3>
-                </div> 
-                </a>
-    
+            <form action="#" class="order">
+                <fieldset>
+                    <legend>Selected Food</legend>
 
-            <div class="clearfix"></div>
+                    <div class="food-menu-img">
+                        <img src="images/french fries.gif" alt="Paneer Tikka" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Spicy French fries</h3>
+                        <p class="food-price">Rs 230</p>
+
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. Divyanshu Tripathi" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. pinchofspice@order.com" class="input-responsive" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                </fieldset>
+
+            </form>
+
         </div>
     </section>
-    <!-- Categories Section Ends Here -->
-
+    <!-- fOOD sEARCH Section Ends Here -->
 
     <!-- social Section Starts Here -->
     <section class="social">
@@ -104,10 +115,10 @@
     </section>
     <!-- social Section Ends Here -->
 
-      <!-- footer Section Starts Here -->
-      <section class="footer">
+    <!-- footer Section Starts Here -->
+    <section class="footer">
         <div class="container text-center">
-            <p>All trademarks are properties of their respective owners. 2008-2021 © Pinch of Spice™ Ltd.<br>All rights reserved.<br> Designed By <a href="#">Ashutosh Tomar, Divyanshu Tripathi, Ishika Goyal</a></p>
+            <p>All rights reserved. Designed By <a href="#">Ashutosh Tomar,Divyanshu Tripathi, Ishika Goyal</a></p>
         </div>
     </section>
     <!-- footer Section Ends Here -->
