@@ -1,8 +1,4 @@
-/* 
-    Author: Vijay Thapa;
-    Theme: Restaurant Food Order;
-    version: 1.0;
-*/
+
 
 /* CSS for All */
 *{
@@ -56,6 +52,21 @@ a:hover{
 }
 .btn-primary{
     background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-success{
+    background-color: #49cf2e;
+    color: white;
+    cursor: pointer;
+}
+.btn-danger{
+    background-color: #fd2b2b;
+    color: white;
+    cursor: pointer;
+}
+.btn-warning{
+    background-color: #fcbe16;
     color: white;
     cursor: pointer;
 }
@@ -151,7 +162,14 @@ fieldset{
     background-color: white;
     border-radius: 15px;
 }
-
+.food-menu-box2{
+    width: 48%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
 .food-menu-img{
     width: 20%;
     float: left;
@@ -257,3 +275,9 @@ fieldset{
         width: 100%;
     }
 }
+@media only screen and (max-width:650px){
+.container {
+width: 96%!important;
+margin: 0 auto;
+padding: 1%;
+}}
