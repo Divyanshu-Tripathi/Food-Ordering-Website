@@ -73,20 +73,24 @@
                 <fieldset>
                     <legend>Delivery Details</legend>
                     <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Divyanshu Tripathi" class="input-responsive" required>
+                    <input type="text" name="full-name" pattern="[A-Za-z\s]{5,25}"title="Name should contain only alphabets(5-25)" placeholder="E.g. Divyanshu Tripathi"  class="input-responsive" required >  
+                    
 
                     <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
-
+                    <input type="tel" name="contact" pattern="(?=.*\d).{10}"  title="Please enter a valid 10 digit number " placeholder="E.g. 9843xxxxxx"   class="input-responsive" required  href="#" class="btn btn-warning">
+                    <a href="otp.html"target="_blank" class="btn btn-warning">Ask for OTP</a>
+                    
                     <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. pinchofspice@order.com" class="input-responsive" required>
-
+                    <input type="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"placeholder="E.g. pinchofspice@order.com" class="input-responsive" required>
+                  
+                    
                     <div class="order-label">Address</div>
                     <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
-
+               
                     <button id='btn-next' name ='next' type='button' class='btn btn-block btn-primary' onclick="confirmOrder()">Confirm Order</button>
-
+                    <input type="submit"class='btn btn-block btn-primary'>
                 </fieldset>
+
 
             </form>
 
